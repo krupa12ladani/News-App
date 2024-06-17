@@ -1,0 +1,90 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  background-color: rgb(147, 145, 145);
+}
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(10, 10, 10);
+  color: white;
+  padding: 23px;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  margin-top: -170px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.searchBar {
+  display: flex;
+}
+.searchBar input {
+  width: 220px;
+  padding: 7px;
+  font-size: 18px;
+  border: none;
+  border-radius: 3px;
+  margin-inline: 5px;
+  height: 15px;
+}
+.searchBar button {
+  width: 60px;
+  height: 32px;
+  background-color: rgb(59, 88, 249);
+  color: aliceblue;
+  border-radius: 3px;
+  border: none;
+  margin-right: 30px;
+  height: 28px;
+}
+.cardData {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit minmax(300px, 1fr));
+  width: 80%;
+  margin: auto;
+  gap: 30px;
+  margin-top: 170px;
+}
+.card {
+  width: 300px;
+  background-color: #fff;
+  padding: 11px;
+  margin-top: 90px;
+  margin: 0px;
+  border-radius: 9px;
+}
+
+.card img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 830px) {
+  li {
+    display: none;
+  }
+}
+@media only screen and (max-width: 470px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .logo {
+    justify-content: center;
+  }
+  .searchBar {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+  }
+}
